@@ -1,0 +1,15 @@
+<!-- app/views/posts/new.html.erb or other relevant view -->
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8 col-md-10 col-sm-12">
+      <h1 class="text-center mb-4">Create New Post</h1>
+
+      <!-- Render the form with Bootstrap styling -->
+      <%= render "form", post: @post %>
+
+      <div class="text-center mt-4">
+        <%= link_to "Back to posts", posts_path, class: "btn btn-secondary btn-lg" %>
+      </div>
+    </div>
+  </div>
+</div>
