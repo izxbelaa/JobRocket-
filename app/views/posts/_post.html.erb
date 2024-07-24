@@ -1,0 +1,14 @@
+<div id="<%= dom_id post %>">
+  <p class="my-5">
+    
+    <h2><%= post.title %> </h2>
+  </p>
+
+  <div class="my-5">
+  
+  <h6>  <%= post.body %> </h6>
+  </div>
+  <% if @post.image.present? %>
+  <%= image_tag @post.image.url, size: "600x400", class: "img-fluid" %>
+<% end %>
+</div>
